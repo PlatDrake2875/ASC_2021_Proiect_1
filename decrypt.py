@@ -1,10 +1,19 @@
-v = list(map(str, input().split()))
+import argparse
 
-key = v[0]
+parser = argparse.ArgumentParser(description="encriptare xor")
+
+parser.add_argument("fisier_input", help="fisierul text de intrare")
+parser.add_argument("parola", help="parola")
+parser.add_argument("fisier_output", help="fisierul output")
+args = parser.parse_args()
+
+# v = list(map(str, input().split()))
+
+key = args.parola
 N = len(key)
 
 try:
-    in_f = open(v[1])
+    in_f = open(args.fisier_input)
 except FileNotFoundError:
     print("File not found!")
 
@@ -19,7 +28,7 @@ for i in range(0, M, 8):
             nr += (1 << (7 - j))
     pars.append(nr)
 
-g = open(v[2], "w")
+g = open(args.fisier_output, "w")
 
 ans = []
 for i in range(len(pars)):

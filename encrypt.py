@@ -1,8 +1,16 @@
-v = list(map(str, input().split()))
+import argparse
 
-key = v[0]
+parser = argparse.ArgumentParser(description="decriptare xor")
+parser.add_argument("parola", help="parola")
+parser.add_argument("fisier_text", help="fisierul text initial")
+parser.add_argument("fisier_codat", help="fisierul text codat, trecut prin cheie")
+args = parser.parse_args()
+
+# v = list(map(str, input().split()))
+
+key = args.parola
 N = len(key)
-file_name = v[1]
+file_name = args.fisier_text
 
 try:
     file = open(file_name)
@@ -20,7 +28,7 @@ for linie in file.readlines():
         ans.append(str(ord(key[j]) ^ ord(linie[i])))
     k = j + 1
 
-file_out = open(v[2], "w")
+file_out = open(args.fisier_codat, "w")
 
 for i in ans:
     x = int(i)
