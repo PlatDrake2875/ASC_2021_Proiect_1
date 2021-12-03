@@ -1,9 +1,10 @@
-key = input()
+v = list(map(str, input().split()))
+
+key = v[0]
 N = len(key)
 
-file_name = input()
 try:
-    in_f = open(file_name)
+    in_f = open(v[1])
 except FileNotFoundError:
     print("File not found!")
 
@@ -18,7 +19,7 @@ for i in range(0, M, 8):
             nr += (1 << (7 - j))
     pars.append(nr)
 
-g = open("input_recuperat.txt", "w")
+g = open(v[2], "w")
 
 ans = []
 for i in range(len(pars)):

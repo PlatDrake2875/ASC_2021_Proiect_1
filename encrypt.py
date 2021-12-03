@@ -1,6 +1,9 @@
-key = input()
+v = list(map(str, input().split()))
+
+key = v[0]
 N = len(key)
-file_name = input()
+file_name = v[1]
+
 try:
     file = open(file_name)
 except FileNotFoundError:
@@ -17,7 +20,7 @@ for linie in file.readlines():
         ans.append(str(ord(key[j]) ^ ord(linie[i])))
     k = j + 1
 
-file_out = open("output", "w")
+file_out = open(v[2], "w")
 
 for i in ans:
     x = int(i)
