@@ -6,5 +6,11 @@
 * Alexandru Tudose Stefan 
 
 # How to use:
- pentru encrypt 
+ Pentru encrypt 
  * ``` python encrypt.py parola input output ```
+ Pentru decrypt 
+ * ``` python decrypt.py output parola input_recuperat ```
+
+# Part 2:
+Numele echipei adverse: _numeGeneric_
+Parola acesteia: 10x2b10x3D2
