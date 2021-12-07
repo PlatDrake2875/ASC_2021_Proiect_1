@@ -12,5 +12,5 @@
  * ``` python decrypt.py output parola input_recuperat ```
 
 # Part 2:
-Numele echipei adverse: _numeGeneric_
+Numele echipei adverse: _numeGeneric_  
 Parola acesteia: 10x2b10x3D2
