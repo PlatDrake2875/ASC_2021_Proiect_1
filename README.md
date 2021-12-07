@@ -7,8 +7,7 @@
 
 # How to use:
  Pentru encrypt 
- * ``` python encrypt.py parola input output ```  
- Pentru decrypt 
+ * ``` python encrypt.py parola input output ```  Pentru decrypt 
  * ``` python decrypt.py output parola input_recuperat ```
 
 # Part 2:
