@@ -6,5 +6,5 @@
 * Alexandru Tudose Stefan 
 
 # How to use:
- * pentru encrypt 
+ pentru encrypt 
  * ``` python encrypt.py parola input output ```
