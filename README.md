@@ -1,5 +1,7 @@
 # ASC_2021_Proiect_1
 
+Implementarea algoritmului XOR cipher dandu-se o cheie si un fisier text si posibilitatea decodificarii acestuia.
+
 # Membri echipei:
 * Pătrașcu Adrian-Octavian
 * Bojan Vlad Cristian
